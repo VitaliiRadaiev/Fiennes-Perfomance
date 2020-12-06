@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'TradeGothic LT';
+    src: url('TradeGothicLT-BoldTwo.eot');
+    src: local('Trade Gothic LT Bold No. 2'), local('TradeGothicLT-BoldTwo'),
+        url('TradeGothicLT-BoldTwo.eot?#iefix') format('embedded-opentype'),
+        url('TradeGothicLT-BoldTwo.woff2') format('woff2'),
+        url('TradeGothicLT-BoldTwo.woff') format('woff'),
+        url('TradeGothicLT-BoldTwo.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TradeGothic LT';
+    src: url('TradeGothicLT-BoldOblique.eot');
+    src: local('Trade Gothic LT Bold Oblique'), local('TradeGothicLT-BoldOblique'),
+        url('TradeGothicLT-BoldOblique.eot?#iefix') format('embedded-opentype'),
+        url('TradeGothicLT-BoldOblique.woff2') format('woff2'),
+        url('TradeGothicLT-BoldOblique.woff') format('woff'),
+        url('TradeGothicLT-BoldOblique.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TradeGothic LT CondEighteen';
+    src: url('TradeGothicLT-BoldCondTwenty.eot');
+    src: local('Trade Gothic LT Bold Condensed No. 20'), local('TradeGothicLT-BoldCondTwenty'),
+        url('TradeGothicLT-BoldCondTwenty.eot?#iefix') format('embedded-opentype'),
+        url('TradeGothicLT-BoldCondTwenty.woff2') format('woff2'),
+        url('TradeGothicLT-BoldCondTwenty.woff') format('woff'),
+        url('TradeGothicLT-BoldCondTwenty.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TradeGothic LT Extended';
+    src: url('TradeGothicLT-Extended.eot');
+    src: local('Trade Gothic LT Extended'), local('TradeGothicLT-Extended'),
+        url('TradeGothicLT-Extended.eot?#iefix') format('embedded-opentype'),
+        url('TradeGothicLT-Extended.woff2') format('woff2'),
+        url('TradeGothicLT-Extended.woff') format('woff'),
+        url('TradeGothicLT-Extended.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TradeGothic LT';
+    src: url('TradeGothicLT-Light.eot');
+    src: local('Trade Gothic LT Light'), local('TradeGothicLT-Light'),
+        url('TradeGothicLT-Light.eot?#iefix') format('embedded-opentype'),
+        url('TradeGothicLT-Light.woff2') format('woff2'),
+        url('TradeGothicLT-Light.woff') format('woff'),
+        url('TradeGothicLT-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TradeGothic LT';
+    src: url('TradeGothicLT.eot');
+    src: local('Trade Gothic LT'), local('TradeGothicLT'),
+        url('TradeGothicLT.eot?#iefix') format('embedded-opentype'),
+        url('TradeGothicLT.woff2') format('woff2'),
+        url('TradeGothicLT.woff') format('woff'),
+        url('TradeGothicLT.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TradeGothic LT';
+    src: url('TradeGothicLT-Oblique.eot');
+    src: local('Trade Gothic LT Oblique'), local('TradeGothicLT-Oblique'),
+        url('TradeGothicLT-Oblique.eot?#iefix') format('embedded-opentype'),
+        url('TradeGothicLT-Oblique.woff2') format('woff2'),
+        url('TradeGothicLT-Oblique.woff') format('woff'),
+        url('TradeGothicLT-Oblique.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TradeGothic LT CondEighteen';
+    src: url('TradeGothicLT-BoldCondTwentyObl.eot');
+    src: local('Trade Gothic LT Bold Condensed No. 20 Oblique'), local('TradeGothicLT-BoldCondTwentyObl'),
+        url('TradeGothicLT-BoldCondTwentyObl.eot?#iefix') format('embedded-opentype'),
+        url('TradeGothicLT-BoldCondTwentyObl.woff2') format('woff2'),
+        url('TradeGothicLT-BoldCondTwentyObl.woff') format('woff'),
+        url('TradeGothicLT-BoldCondTwentyObl.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TradeGothic LT CondEighteen';
+    src: url('TradeGothicLT-CondEighteenObl.eot');
+    src: local('Trade Gothic LT Condensed No. 18 Oblique'), local('TradeGothicLT-CondEighteenObl'),
+        url('TradeGothicLT-CondEighteenObl.eot?#iefix') format('embedded-opentype'),
+        url('TradeGothicLT-CondEighteenObl.woff2') format('woff2'),
+        url('TradeGothicLT-CondEighteenObl.woff') format('woff'),
+        url('TradeGothicLT-CondEighteenObl.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TradeGothic LT';
+    src: url('TradeGothicLT-BoldTwoOblique.eot');
+    src: local('Trade Gothic LT Bold No. 2 Oblique'), local('TradeGothicLT-BoldTwoOblique'),
+        url('TradeGothicLT-BoldTwoOblique.eot?#iefix') format('embedded-opentype'),
+        url('TradeGothicLT-BoldTwoOblique.woff2') format('woff2'),
+        url('TradeGothicLT-BoldTwoOblique.woff') format('woff'),
+        url('TradeGothicLT-BoldTwoOblique.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TradeGothic LT Extended';
+    src: url('TradeGothicLT-BoldExtended.eot');
+    src: local('Trade Gothic LT Bold Extended'), local('TradeGothicLT-BoldExtended'),
+        url('TradeGothicLT-BoldExtended.eot?#iefix') format('embedded-opentype'),
+        url('TradeGothicLT-BoldExtended.woff2') format('woff2'),
+        url('TradeGothicLT-BoldExtended.woff') format('woff'),
+        url('TradeGothicLT-BoldExtended.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TradeGothic LT';
+    src: url('TradeGothicLT-Bold.eot');
+    src: local('Trade Gothic LT Bold'), local('TradeGothicLT-Bold'),
+        url('TradeGothicLT-Bold.eot?#iefix') format('embedded-opentype'),
+        url('TradeGothicLT-Bold.woff2') format('woff2'),
+        url('TradeGothicLT-Bold.woff') format('woff'),
+        url('TradeGothicLT-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TradeGothic LT';
+    src: url('TradeGothicLT-LightOblique.eot');
+    src: local('Trade Gothic LT Light Oblique'), local('TradeGothicLT-LightOblique'),
+        url('TradeGothicLT-LightOblique.eot?#iefix') format('embedded-opentype'),
+        url('TradeGothicLT-LightOblique.woff2') format('woff2'),
+        url('TradeGothicLT-LightOblique.woff') format('woff'),
+        url('TradeGothicLT-LightOblique.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TradeGothic LT CondEighteen';
+    src: url('TradeGothicLT-CondEighteen.eot');
+    src: local('Trade Gothic LT Condensed No. 18'), local('TradeGothicLT-CondEighteen'),
+        url('TradeGothicLT-CondEighteen.eot?#iefix') format('embedded-opentype'),
+        url('TradeGothicLT-CondEighteen.woff2') format('woff2'),
+        url('TradeGothicLT-CondEighteen.woff') format('woff'),
+        url('TradeGothicLT-CondEighteen.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+

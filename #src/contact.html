@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Fiennes</title>
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
+	<link rel="stylesheet" href="css/plyr.css">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+	@@include('_header.html')
+	<main class="contact">
+		<section class="contact__hero hero">
+			<div class="hero__body">
+				<div class="hero__img ibg">
+					<img src="img/photo/cont-bg.jpg" alt="photo">
+				</div>
+				<div class="hero__text-wrap">
+					<div class="hero__suptitle ">
+						contact us
+
+					</div>
+					<h1 class="hero__title">
+						headline here
+					</h1>
+				</div>
+			</div>
+		</section>
+
+		<form class="contact__form form-contact">
+
+			<div class="form-contact__head">
+				<div class="text-block text-block_center">
+					<div class="text-block__body ">
+						<div class="text-block__suptitle suptitle">
+							contact form
+						</div>
+						<h3 class="text-block__title title-3">
+							<span>time to get in</span>
+							touch headline here
+						</h3>
+					</div>
+				</div>
+			</div>
+
+			<div class="form-contact__body">
+				<div class="form-contact__item">
+					<label class="form-contact__label" for="name">
+						name <span>:</span>
+					</label>
+					<input id="name" type="text" class="form-contact__input input">
+				</div>
+				<div class="form-contact__item">
+					<label class="form-contact__label" for="email">
+						email <span>:</span>
+					</label>
+					<input id="email" type="text" class="form-contact__input input">
+				</div>
+				<div class="form-contact__item">
+					<label class="form-contact__label" for="telephone">
+						telephone <span>:</span>
+					</label>
+					<input id="telephone" type="text" class="form-contact__input input">
+				</div>
+
+				<div class="form-contact__item">
+					<label class="form-contact__label" for="subject">
+						subject <span>:</span>
+					</label>
+					<select class="form-contact__select" name="subject" id="subject">
+						<option value="1" selected>subject</option>
+						<option value="2">subject 2</option>
+						<option value="3">subjectsubject3subjectsubject3</option>
+						<option value="4">subject 4</option>
+						<option value="5">subject 5</option>
+						<option value="6">subject 6</option>
+					</select>
+				</div>
+
+				<div class="form-contact__item form-contact__item-textarea">
+					<label class="form-contact__label" for="message">
+						message <span>:</span>
+					</label>
+					<textarea class="form-contact__textarea textarea" name="text" id="message"></textarea>
+				</div>
+				<div class="form-contact__submit-wrap">
+					<button class="form-contact__submit btn-default" type="submit">submit</button>
+				</div>
+			</div>
+
+		</form>
+
+		<section class="contact__info info-contact">
+			<div class="container">
+				<div class="info-contact__head">
+					<div class="text-block text-block_center">
+						<div class="text-block__body ">
+							<div class="text-block__suptitle suptitle">
+								contact details
+							</div>
+							<h3 class="text-block__title title-3">
+								<span>whenever you need us</span>
+								headline here
+							</h3>
+						</div>
+					</div>
+				</div>
+
+				<ul class="info-contact__list">
+					<li>
+						<div class="info-contact__label">
+							telephone
+						</div>
+						<div class="info-contact__text">
+							<a href="tel:4401367810438">+44 (0)1367 810438</a>
+						</div>
+					</li>
+					<li>
+						<div class="info-contact__label">
+							email
+						</div>
+						<div class="info-contact__text">
+							<a href="mailto:enquiries@fiennes.co.uk">enquiries@fiennes.co.uk</a>
+						</div>
+					</li>
+					<li>
+						<div class="info-contact__label">
+							address
+						</div>
+						<div class="info-contact__text">
+							Fiennes Restoration Ltd
+							Broughton Poggs Business Park,
+							Filkins,
+							GL7 3JH
+						</div>
+					</li>
+					<li>
+						<div class="info-contact__label">
+							open times
+						</div>
+						<div class="info-contact__text">
+							Monday to Friday 08:30 to 17:00
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="contact__map">
+			<div class="map" id="map"></div>
+		</section>
+	</main>
+	@@include('_email-submit.html')
+	@@include('_footer.html')
+	@@include('_popup.html')
+
+	<script src="js/libs.min.js"></script>
+	<script src="js/main.min.js"></script>
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7Q82l2QjSzJJk1uUW3OzUBGPTlbk8w1g&callback=initMap&libraries=&v=weekly"
+		defer></script>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+@include font("FreightText", "FreightTextBold", "700", "normal");
+@include font("FreightText", "FreightTextBook", "400", "normal");
+@include font("FreightText", "FreightTextMedium", "500", "normal");
+
+@include font("TradeGothicLT-Bold", "TradeGothicLT-Bold", "700", "normal");
+//@include font("TradeGothicLT-BoldCondTwenty", "TradeGothicLT-BoldCondTwenty", "700", "normal");
+//@include font("TradeGothicLT-BoldCondTwentyObl", "TradeGothicLT-BoldCondTwentyObl", "700", "normal");
+//@include font("TradeGothicLT-BoldExtended", "TradeGothicLT-BoldExtended", "700", "normal");
+// @include font("TradeGothicLT-BoldOblique", "TradeGothicLT-BoldOblique", "700", "normal");
+// @include font("TradeGothicLT-BoldTwo", "TradeGothicLT-BoldTwo", "700", "normal");
+// @include font("TradeGothicLT-BoldTwoOblique", "TradeGothicLT-BoldTwoOblique", "700", "normal");
+ @include font("TradeGothicLT-CondEighteen", "TradeGothicLT-CondEighteen", "500", "normal");
+// @include font("TradeGothicLT-CondEighteenObl", "TradeGothicLT-CondEighteenObl", "400", "normal");
+ @include font("TradeGothicLT-Light", "TradeGothicLT-Light", "300", "normal");
+// @include font("TradeGothicLT-Extended", "TradeGothicLT-Extended", "400", "normal");
+// @include font("TradeGothicLT-LightOblique", "TradeGothicLT-LightOblique", "300", "normal");
+// @include font("TradeGothicLT-Oblique", "TradeGothicLT-Oblique", "400", "normal");
+// @include font("TradeGothicLT", "TradeGothicLT", "300", "normal");
+
+
+@font-face {
+  font-family: "TTNorms";
+  font-display: swap;
+  src: url("../fonts/TTNorms-Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "TTNorms";
+  font-display: swap;
+  src: url("../fonts/TTNorms-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TTNorms-Italic";
+  font-display: swap;
+  src: url("../fonts/TTNorms-Italic.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TTNorms";
+  font-display: swap;
+  src:url("../fonts/TTNorms-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TTNorms";
+  font-display: swap;
+  src:url("../fonts/TTNorms-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TTNorms";
+  font-display: swap;
+  src:url("../fonts/TTNorms-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}

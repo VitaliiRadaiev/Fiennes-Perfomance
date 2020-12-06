@@ -1,0 +1,106 @@
+.restoration-crafts {
+	&__hero {
+		padding: 0 3rem;
+
+		@media (max-width: $md3+px) {
+			padding: 0 1.5rem;
+		}
+
+		& .video-block__body {
+		    border-bottom: 10px solid $mainColor;
+
+		    & .video-block__play-pause {
+		    	top: 81%;
+		    }
+		}
+	}
+
+	&__text-block {
+		margin: 15.3rem 0 15.3rem;
+
+		@media (max-width: $md3+px) {
+			margin: 10rem 0 10rem;
+		}
+
+		@media (max-width: $md4+px) {
+			margin: 5rem 0 5rem;
+		}
+	}
+
+	&__crafts-block {
+		margin: 17.2rem 0 8rem;
+		background-color: #f9f9f9;
+		background-image: linear-gradient(180deg, #f9f9f9 0%, #ffffff 100%);
+		padding-top: 17.6rem;
+
+		@media (max-width: 1023px) {
+			margin: 14rem 0 8rem;
+		}
+
+		@media (max-width: $md3+px) {
+			margin: 12rem 0 8rem;
+		}
+
+		@media (max-width: $md4+px) {
+			margin: 8rem 0 7rem;
+			padding-top: 9rem;
+		}
+
+		&-title {
+			margin-bottom: 12rem;
+			text-align: center;
+
+			@media (max-width: 1023px) {
+				margin-bottom: 10rem;
+			}
+
+			@media (max-width: $md3+px) {
+				margin-bottom: 5rem;
+			}
+		}
+
+		& .container_large-1400 {
+			padding: 0;
+		}
+
+		& .card__img {
+			margin-bottom: 3rem;
+
+			@media (max-width: $md3+px) {
+				margin-bottom: 1rem;
+			}
+		}
+
+		& .card__text-wrap {
+		    padding: 2rem 4rem;
+
+		    @media (max-width: $md3+px) {
+		    	padding: 2rem 2rem;
+		    }
+		}
+
+		& .card__title {
+		    margin-bottom: 2rem;
+
+		    @media (max-width: $md3+px) {
+		    	margin-bottom: 1rem;
+		    }
+		}
+
+		& .card__btn-wrap {
+		    margin-top: 5.3rem;
+
+		    @media (max-width: $md3+px) {
+		    	 margin-top: 3.3rem;
+		    }
+		}
+
+		& .block-columns-2 .column {
+		    margin-bottom: 14.5rem;
+
+		    @media (max-width: $md3+px) {
+		    	 margin-bottom: 7rem;
+		    }
+		}
+	}
+}
