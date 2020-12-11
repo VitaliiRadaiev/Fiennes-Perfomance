@@ -413,7 +413,7 @@ cardVideoHandler();;
 	let slider = document.querySelectorAll('.slider-text');
 	if(slider.length>0) {
 		slider.forEach(item => {
-			let mySwiper = new Swiper(item.querySelector('.swiper-container'), {
+			let mySwiper = new Swiper(item.querySelector('.slider-text__body'), {
 			slidesPerView:1,
 			//loop: true,
 			speed: 600,
@@ -448,6 +448,14 @@ cardVideoHandler();;
 			 }, 
 
 			})
+
+			let sliderBg  = new Swiper(item.querySelector('.slider-text__bg'), {
+				slidesPerView:1,
+				speed: 600,
+				effect: 'fade',
+			})
+
+			mySwiper.controller.control = sliderBg;
 		})
 	}
 }
