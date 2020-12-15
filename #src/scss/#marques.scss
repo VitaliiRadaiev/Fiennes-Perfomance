@@ -495,6 +495,7 @@
 	position: relative;
 	height: 0;
 	padding-bottom: 31%;
+	background-color: #d8d7d7;
 
 	@media (max-width: $md3+px) {
 		height: auto;
@@ -507,13 +508,13 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
-		z-index: -1;
-		background-color: #d8d7d7;
+		z-index: 1;
+
 
 		& img {
 			display: none;
 		}
-/*		@media (max-width: $md3+px) {
+		@media (max-width: $md3+px) {
 			background: url(../img/photo/marques-bottom-mobile-bg.png) 0 0 repeat;
 
 			&:before {
@@ -529,7 +530,7 @@
 			& img {
 				display: none;
 			}
-		}*/
+		}
 	}
 
 	&__body {
@@ -540,6 +541,7 @@
 		height: 100%;
 		display: flex;
 		align-items: center;
+		z-index: 2;
 
 		@media (max-width: $md3+px) {
 			min-height: 40rem;

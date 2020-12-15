@@ -614,6 +614,10 @@ a {
 			color: $mainColor;
 		}
 
+		& a {
+			text-decoration: underline;
+		}
+
 
 		& p {
 
@@ -1125,6 +1129,13 @@ a {
 
 // === three-img-block ========================================================================
 .three-img-block {
+	margin-bottom: 12rem;
+	@media (max-width: $md2+px) {
+		margin-bottom: 10rem;
+	}
+	@media (max-width: $md3+px) {
+		margin-bottom: 7rem;
+	}
 	&_reverse {
 		& .three-img-block__body {
 			flex-direction: column-reverse;
