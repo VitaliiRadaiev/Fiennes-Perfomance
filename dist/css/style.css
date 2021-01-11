@@ -31,6 +31,14 @@
 }
 
 @font-face {
+  font-family: "TradeGothicLT-BoldCondTwenty";
+  font-display: swap;
+  src: url("../fonts/TradeGothicLT-BoldCondTwenty.woff") format("woff"), url("../fonts/TradeGothicLT-BoldCondTwenty.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "TradeGothicLT-CondEighteen";
   font-display: swap;
   src: url("../fonts/TradeGothicLT-CondEighteen.woff") format("woff"), url("../fonts/TradeGothicLT-CondEighteen.woff2") format("woff2");
@@ -563,7 +571,7 @@ body {
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   color: #000;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 
 body.lock {
@@ -705,7 +713,7 @@ a {
 
 .title-1 {
   color: #000000;
-  font-family: "TradeGothicLT-Bold", serif;
+  font-family: "TradeGothicLT-BoldCondTwenty", serif;
   font-size: 4.4rem;
   font-weight: 700;
   letter-spacing: 0.09em;
@@ -715,7 +723,7 @@ a {
 
 .title-2 {
   color: #231f20;
-  font-family: "TradeGothicLT-Bold", serif;
+  font-family: "TradeGothicLT-BoldCondTwenty", serif;
   font-size: 4.2rem;
   font-weight: 700;
   letter-spacing: 0.17em;
@@ -725,10 +733,10 @@ a {
 
 .title-3 {
   color: #231f20;
-  font-family: "TradeGothicLT-Bold", serif;
-  font-size: 3.1rem;
+  font-family: "TradeGothicLT-BoldCondTwenty", serif;
+  font-size: 3.6rem;
   font-weight: 700;
-  letter-spacing: 0.142em;
+  letter-spacing: 0.04em;
   line-height: 4.6rem;
   text-transform: uppercase;
 }
@@ -744,7 +752,7 @@ a {
 }
 
 .btn-default {
-  color: #aa2032;
+  color: #000;
   font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: 0.25em;
@@ -757,7 +765,7 @@ a {
   display: inline-block;
   white-space: nowrap;
   background: transparent;
-  border: 1px solid #aa2032;
+  border: 1px solid #000;
 }
 
 .btn-default:active {
@@ -1035,10 +1043,12 @@ a {
 .text-block__line {
   display: inline-block;
   /* Style for "Line 4" */
-  width: 19rem;
-  height: 1.1rem;
-  background: #aa2032;
+  width: 80%;
+  max-width: 365px;
+  padding-bottom: 5.5%;
+  background: url(../img/icons/text-line.svg) center no-repeat;
   margin-bottom: 3rem;
+  background-size: contain;
 }
 
 .text-block__suptitle {
@@ -1053,7 +1063,7 @@ a {
 
 .text-block__title > span {
   display: block;
-  font-family: "TradeGothicLT-Light";
+  font-family: "TradeGothicLT-CondEighteen", sans-serif;
   font-weight: 300;
 }
 
@@ -1176,13 +1186,13 @@ a {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  font-family: "TradeGothicLT-Bold", serif;
+  font-family: "TradeGothicLT-BoldCondTwenty", serif;
 }
 
 .card-journal__text {
   color: #000000;
   font-family: "TTNorms", serif;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.8rem;
 }
@@ -1416,9 +1426,9 @@ a {
 
 .card__text > p {
   color: #231f20;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: 300;
-  line-height: 2.4rem;
+  line-height: 1.41em;
   max-width: 58.5rem;
 }
 
@@ -1506,6 +1516,10 @@ a {
 
 .social-list > a svg path.play {
   fill: #fff;
+}
+
+.one-img-block {
+  margin: 13.3rem 0 13.3rem;
 }
 
 .one-img-block img {
@@ -1689,6 +1703,31 @@ a {
   text-align: center;
   padding: 7rem 1.5rem;
   min-height: 48rem;
+  overflow: hidden;
+}
+
+.hero__body:before {
+  position: absolute;
+  content: '';
+  top: -10px;
+  right: 70%;
+  width: 810px;
+  height: 55px;
+  background: url(../img/lines/Group_68.svg) center no-repeat;
+  background-size: contain;
+  z-index: 2;
+}
+
+.hero__body::after {
+  position: absolute;
+  content: '';
+  bottom: -10px;
+  left: 66%;
+  width: 810px;
+  height: 55px;
+  background: url(../img/lines/Group_69.svg) center no-repeat;
+  background-size: contain;
+  z-index: 2;
 }
 
 .hero__img {
@@ -1719,14 +1758,14 @@ a {
 .hero__suptitle {
   font-size: 5.2rem;
   font-weight: 300;
-  letter-spacing: 0.145em;
+  letter-spacing: 0.04em;
   line-height: 5.5rem;
   text-transform: uppercase;
   margin-bottom: 7rem;
   margin-top: 1.8rem;
   margin: 0 auto;
-  max-width: 648px;
-  font-family: "TradeGothicLT-Light", sans-serif;
+  max-width: 660px;
+  font-family: "TradeGothicLT-CondEighteen", sans-serif;
 }
 
 .hero__title {
@@ -1737,7 +1776,7 @@ a {
   text-transform: uppercase;
   margin-bottom: 7rem;
   margin-top: 0rem;
-  font-family: "TradeGothicLT-Bold", serif;
+  font-family: "TradeGothicLT-BoldCondTwenty", sans-serif;
 }
 
 .reviews-slider {
@@ -1746,7 +1785,7 @@ a {
 
 .reviews-slider__text {
   color: #231f20;
-  font-family: "TradeGothicLT-Bold", serif;
+  font-family: "TradeGothicLT-BoldCondTwenty", serif;
   font-size: 2.4rem;
   font-weight: 300;
   line-height: 3.6rem;
@@ -1968,7 +2007,7 @@ a {
 
 .text-content h4 {
   color: #231f20;
-  font-family: "TradeGothicLT-Bold", serif;
+  font-family: "TradeGothicLT-BoldCondTwenty", serif;
   font-size: 2.6rem;
   font-weight: 700;
   letter-spacing: 0.142em;
@@ -1978,7 +2017,7 @@ a {
 }
 
 .text-content h4 > span {
-  font-family: "TradeGothicLT-Light";
+  font-family: "TradeGothicLT-CondEighteen";
   font-weight: 300;
 }
 
@@ -3252,6 +3291,7 @@ textarea.input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
 }
 
 .header__top > li {
@@ -3273,7 +3313,7 @@ textarea.input {
 }
 
 .header__top-link {
-  color: white;
+  color: #fff;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 7.5px;
@@ -3288,7 +3328,6 @@ textarea.input {
 
 .header__top-link.active {
   background: #fff;
-  color: #aa2032;
   text-decoration: none;
 }
 
@@ -3808,7 +3847,7 @@ textarea.input {
 }
 
 .home__journal-title > span {
-  font-family: "TradeGothicLT-Light", sans-serif;
+  font-family: "TradeGothicLT-CondEighteen", sans-serif;
   font-weight: 300;
 }
 
@@ -3998,15 +4037,62 @@ textarea.input {
   margin-right: auto;
 }
 
+.slider {
+  position: relative;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  top: -10px;
+  right: 70%;
+  width: 810px;
+  height: 55px;
+  background: url(../img/lines/Group_68.svg) center no-repeat;
+  background-size: contain;
+  z-index: 2;
+}
+
 .slider__img {
   height: 80vh;
   min-height: 48rem;
   background-color: #fff;
+  position: relative;
+  z-index: 1;
 }
 
 .slider .swiper-slide {
   cursor: -webkit-grab;
   cursor: grab;
+  position: relative;
+}
+
+.slider .swiper-slide .text-block_center {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider .swiper-slide .text-block_center .text-block__title,
+.slider .swiper-slide .text-block_center h3,
+.slider .swiper-slide .text-block_center .title-3 {
+  color: #fff;
 }
 
 .slider .swiper-pagination {
@@ -4468,11 +4554,6 @@ textarea.input {
   border-bottom: 1rem solid #aa2032;
 }
 
-.res-single__hero .swiper-container .swiper-pagination .swiper-pagination-bullet-active > .progress {
-  -webkit-animation: dash 8.1s linear forwards;
-          animation: dash 8.1s linear forwards;
-}
-
 .res-single__text-block {
   margin: 15.3rem 0 13.3rem;
 }
@@ -4542,7 +4623,7 @@ textarea.input {
 .previous-restoration__text {
   max-width: 75rem;
   padding: 3rem 2rem;
-  font-family: "TradeGothicLT-Bold", serif;
+  font-family: "TradeGothicLT-BoldCondTwenty", serif;
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
   line-height: 1.8rem;
@@ -4727,7 +4808,7 @@ textarea.input {
   margin-top: 1.8rem;
   margin: 0 auto;
   max-width: 648px;
-  font-family: "TradeGothicLT-Light", sans-serif;
+  font-family: "TradeGothicLT-CondEighteen", sans-serif;
 }
 
 .journal__hero-title {
@@ -4741,7 +4822,7 @@ textarea.input {
 
 .journal__hero-title > span {
   display: block;
-  font-family: "TradeGothicLT-Light";
+  font-family: "TradeGothicLT-BoldCondTwenty";
   font-weight: 300;
 }
 
@@ -4934,7 +5015,7 @@ textarea.input {
 
 .article p {
   color: #000000;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 400;
   margin-bottom: 2rem;
   line-height: 2.2rem;
@@ -5099,6 +5180,19 @@ textarea.input {
   height: 100%;
   width: 100%;
   position: relative;
+  overflow: hidden;
+}
+
+.hero-ownership__img:before {
+  position: absolute;
+  content: '';
+  top: -10px;
+  right: 50%;
+  width: 710px;
+  height: 45px;
+  background: url(../img/lines/Group_68.svg) center no-repeat;
+  background-size: contain;
+  z-index: 2;
 }
 
 .hero-ownership__img img {
@@ -5506,7 +5600,7 @@ textarea.input {
 .info-block__triggers {
   display: inline-block;
   color: #231f20;
-  font-family: "TradeGothicLT-Bold", serif;
+  font-family: "TradeGothicLT-BoldCondTwenty", serif;
   font-size: 2.2rem;
   white-space: nowrap;
   font-weight: 300;
@@ -5571,7 +5665,7 @@ textarea.input {
 
 .info-block__tabs-content .big {
   color: #231f20;
-  font-family: "TradeGothicLT-Bold", serif;
+  font-family: "TradeGothicLT-BoldCondTwenty", serif;
   font-size: 2.1rem;
   font-weight: 300;
   line-height: 2.6rem;
@@ -5583,7 +5677,7 @@ textarea.input {
 
 .info-block__tabs-content p {
   color: #231f20;
-  font-family: "TradeGothicLT-Bold", serif;
+  font-family: "TradeGothicLT-BoldCondTwenty", serif;
   font-size: 1.5rem;
   font-weight: 300;
   line-height: 1.8rem;
@@ -5614,7 +5708,7 @@ textarea.input {
 
 .info-block__tabs-title {
   color: #231f20;
-  font-family: "TradeGothicLT-Bold", serif;
+  font-family: "TradeGothicLT-BoldCondTwenty", serif;
   font-size: 5rem;
   font-weight: 300;
   line-height: 5rem;
@@ -5956,7 +6050,7 @@ textarea.input {
   letter-spacing: 0.214rem;
   text-transform: uppercase;
   line-height: 2.6rem;
-  font-family: "TradeGothicLT-Bold", serif;
+  font-family: "TradeGothicLT-BoldCondTwenty", serif;
 }
 
 .info-contact__text {
@@ -6174,24 +6268,23 @@ textarea.input {
   max-width: 56.2rem;
 }
 
-.our-family__head .text-block__text {
-  max-width: 56.2rem;
-}
-
 .our-family__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .our-family__list > li {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 50%;
-          flex: 0 1 50%;
-  padding: 0 4rem;
-  margin-bottom: 18rem;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
+  padding: 0 6rem;
+  margin-bottom: 13rem;
 }
 
 .our-family__list-item {
@@ -6202,7 +6295,7 @@ textarea.input {
 
 .our-family__logo {
   max-width: 31.2rem;
-  margin: 0 auto 13rem;
+  margin: 0 auto 0rem;
 }
 
 .specialists-landing .fadeIn {
@@ -6265,7 +6358,7 @@ textarea.input {
 
 .specialists-landing__list .card__suptitle {
   color: #aa2032;
-  font-family: "TradeGothicLT-Light", sans-serif;
+  font-family: "TradeGothicLT-CondEighteen", sans-serif;
   font-size: 3.1rem;
   font-weight: 300;
   letter-spacing: normal;
@@ -6347,6 +6440,32 @@ textarea.input {
 .email-submit {
   background-color: #000;
   font-size: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.email-submit:before {
+  position: absolute;
+  content: '';
+  top: -14px;
+  right: 81%;
+  width: 613px;
+  height: 55px;
+  background: url(../img/lines/Group_68.svg) center no-repeat;
+  background-size: contain;
+  z-index: 2;
+}
+
+.email-submit::after {
+  position: absolute;
+  content: '';
+  bottom: -14px;
+  left: 81%;
+  width: 613px;
+  height: 55px;
+  background: url(../img/lines/Group_69.svg) center no-repeat;
+  background-size: contain;
+  z-index: 2;
 }
 
 .email-submit__body {
@@ -7429,6 +7548,16 @@ textarea.input {
     margin-bottom: 10rem;
   }
 
+  .hero__body:before {
+    height: 30px;
+    right: 64%;
+  }
+
+  .hero__body::after {
+    height: 30px;
+    left: 62%;
+  }
+
   .simple-hero__content {
     min-height: 36rem;
   }
@@ -7462,9 +7591,35 @@ textarea.input {
     text-align: center;
   }
 
+  .header__menu-list > li > a {
+    font-size: 1.4rem;
+  }
+
   .header__menu-item {
     margin-right: 0;
     text-align: center;
+  }
+
+  .drop-menu__list {
+    pointer-events: auto;
+    position: static;
+    opacity: 1;
+    -webkit-transform: translate(0);
+        -ms-transform: translate(0);
+            transform: translate(0);
+    display: none;
+    margin-bottom: 1rem;
+    padding-top: 0;
+  }
+
+  .drop-menu__list > li > a {
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+  }
+
+  .slider:before {
+    height: 30px;
+    right: 64%;
   }
 
   .res-single__book-restoration-body {
@@ -7538,11 +7693,6 @@ textarea.input {
     line-height: 2.4rem;
   }
 
-  .article p {
-    font-size: 1.6rem;
-    line-height: 2.2rem;
-  }
-
   .article__images .three-img-block__row_1 {
     margin-top: 1.5rem;
   }
@@ -7553,6 +7703,10 @@ textarea.input {
 
   .article__images .three-img-block__column {
     width: calc(50% - 0.75rem);
+  }
+
+  .ownership__hero {
+    margin-bottom: 14rem;
   }
 
   .ownership .services-block .services-block__column_1 {
@@ -7698,6 +7852,20 @@ textarea.input {
     margin-left: 0rem;
   }
 
+  .our-family__list > li {
+    padding: 0 4rem;
+  }
+
+  .email-submit:before {
+    height: 30px;
+    right: 64%;
+  }
+
+  .email-submit::after {
+    height: 30px;
+    left: 62%;
+  }
+
   .footer__nav {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -7837,6 +8005,10 @@ textarea.input {
     margin-top: 3.3rem;
   }
 
+  .one-img-block {
+    margin: 12rem 0 12rem;
+  }
+
   .img-full-screen {
     padding: 0 1.5rem;
   }
@@ -7878,6 +8050,14 @@ textarea.input {
 
   .hero__body {
     height: 60vh;
+  }
+
+  .hero__body:before {
+    right: 52%;
+  }
+
+  .hero__body::after {
+    left: 52%;
   }
 
   .hero__suptitle {
@@ -7986,10 +8166,6 @@ textarea.input {
     padding: 2rem 1.5rem;
   }
 
-  .header__menu-list > li > a {
-    font-size: 1.2rem;
-  }
-
   .header__menu-link {
     font-size: 1.2rem;
   }
@@ -8071,6 +8247,10 @@ textarea.input {
 
   .hero-slider__btn-wrap .btn-default {
     font-size: 1.2rem;
+  }
+
+  .slider:before {
+    right: 52%;
   }
 
   .slider__img {
@@ -8263,7 +8443,7 @@ textarea.input {
 
   .ownership__hero {
     padding: 0 1.5rem;
-    margin-bottom: 14rem;
+    margin-bottom: 7rem;
   }
 
   .ownership__advantages {
@@ -8633,13 +8813,9 @@ textarea.input {
 
   .our-family__list > li {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 100%;
-            flex: 0 1 100%;
-    margin-bottom: 12rem;
-  }
-
-  .our-family__logo {
-    margin-bottom: 7rem;
+        -ms-flex: 0 1 33.333%;
+            flex: 0 1 33.333%;
+    margin-bottom: 9rem;
   }
 
   .specialists-landing__text-block {
@@ -8670,6 +8846,14 @@ textarea.input {
 
   .specialisms__column .btn-default {
     margin-left: 50px;
+  }
+
+  .email-submit:before {
+    right: 52%;
+  }
+
+  .email-submit::after {
+    left: 52%;
   }
 
   .footer__body {
@@ -8732,6 +8916,13 @@ textarea.input {
     line-height: 1.5rem;
   }
 
+  .our-family__list > li {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+    padding: 0 2rem;
+  }
+
   .footer__nav-column {
     width: 100%;
     text-align: center;
@@ -8771,6 +8962,18 @@ textarea.input {
 
   .card-journal__title {
     margin-bottom: 1.5rem;
+  }
+
+  .one-img-block {
+    margin: 5rem 0 5rem;
+  }
+
+  .hero__body:before {
+    right: 36%;
+  }
+
+  .hero__body::after {
+    left: 36%;
   }
 
   .hero__suptitle {
@@ -8866,6 +9069,10 @@ textarea.input {
 
   .hero-slider__btn-wrap .btn-default {
     font-size: 1rem;
+  }
+
+  .slider:before {
+    right: 36%;
   }
 
   .slider-text__text {
@@ -9020,6 +9227,14 @@ textarea.input {
 
   .specialisms__column .btn-default {
     margin-left: 30px;
+  }
+
+  .email-submit:before {
+    right: 36%;
+  }
+
+  .email-submit::after {
+    left: 36%;
   }
 
   .email-submit__form-input {

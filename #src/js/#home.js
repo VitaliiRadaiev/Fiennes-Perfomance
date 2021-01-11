@@ -83,7 +83,7 @@
 				//loop: true,
 				speed: 600,
 				autoplay: {
-					delay: document.querySelector('.res-single .res-single__hero.slider') ? 8000 : 4000,
+					delay: 4000,
 					disableOnInteraction: false,
 				},
 				spaceBetween: 15,

@@ -1,6 +1,60 @@
 .email-submit {
 	background-color: #000;
 	font-size: 8px;
+
+	position: relative;
+	overflow: hidden;
+
+	&:before {
+		position: absolute;
+		content: '';
+		top: -14px;
+		right: 81%;
+		width: 613px;
+		height: 55px;
+		background: url(../img/lines/Group_68.svg) center no-repeat;
+		background-size: contain;
+		z-index: 2;
+
+		@media (max-width: $md2+px) {
+			height: 30px;
+			right: 64%;
+		}
+
+		@media (max-width: $md3+px) {
+			right: 52%;
+		}
+
+		@media (max-width: $md4+px) {
+			right: 36%;
+		}
+	}
+
+	&::after {
+		position: absolute;
+		content: '';
+		bottom: -14px;
+		left: 81%;
+		width: 613px;
+		height: 55px;
+		background: url(../img/lines/Group_69.svg) center no-repeat;
+		background-size: contain;
+		z-index: 2;
+
+		@media (max-width: $md2+px) {
+			height: 30px;
+			left: 62%;
+		}
+
+		@media (max-width: $md3+px) {
+			left: 52%;
+		}
+
+		@media (max-width: $md4+px) {
+			left: 36%;
+		}
+	}
+
 	&__body {
 		min-height: 21.5em;
 		padding-top: 2em;

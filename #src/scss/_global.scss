@@ -41,7 +41,7 @@ body {
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 	color: #000;
-	font-size: 1.6rem;
+	font-size: 1.5rem;
 	&.lock {
 		overflow: hidden;
 	}
@@ -260,9 +260,9 @@ a {
 .title-3 {
 	color: #231f20;
 	font-family:$seconFontFamily;
-	font-size: 3.1rem;
+	font-size: 3.6rem;
 	font-weight: 700;
-	letter-spacing: 0.142em;
+	letter-spacing: 0.04em;
 	line-height: 4.6rem;
 	text-transform: uppercase;
 
@@ -298,7 +298,7 @@ a {
 
 // === btn ========================================================================
 .btn-default {
-	color: $mainColor;
+	color: #000;
 	font-size: 1.2rem;
 	font-weight: 700;
 	letter-spacing: 0.25em;
@@ -309,7 +309,7 @@ a {
 	display: inline-block;
 	white-space: nowrap;
 	background: transparent;
-	border: 1px solid $mainColor;
+	border: 1px solid #000;
 
 	@media (min-width: 992px) {
 		&:hover {
@@ -562,10 +562,12 @@ a {
 	&__line {
 		display: inline-block;
 		/* Style for "Line 4" */
-		width: 19rem;
-		height: 1.1rem;
-		background: $mainColor;
+		width: 80%;
+		max-width: 365px;
+		padding-bottom: 5.5%;
+		background: url(../img/icons/text-line.svg) center no-repeat;
 		margin-bottom: 3rem;
+		background-size: contain;
 	}
 
 	&__suptitle {
@@ -586,7 +588,7 @@ a {
 
 		& > span {
 			display: block;
-			font-family: "TradeGothicLT-Light";
+			font-family: "TradeGothicLT-CondEighteen", sans-serif;
 			font-weight: 300;
 		}
 
@@ -765,7 +767,7 @@ a {
 	&__text {
 		color: #000000;
 		font-family: $mainFontFamily;
-		font-size: 1.3rem;
+		font-size: 1.5rem;
 		font-weight: 400;
 		line-height: 1.8rem;
 	}
@@ -959,9 +961,9 @@ a {
 
 		& > p {
 			color: #231f20;
-			font-size: 1.7rem;
+			font-size: 1.5rem;
 			font-weight: 300;
-			line-height: 2.4rem;
+			line-height: 1.41em;
 			max-width: 58.5rem;
 
 
@@ -1077,6 +1079,17 @@ a {
 
 // === one-img-block ========================================================================
 .one-img-block {
+
+	margin: 13.3rem 0 13.3rem;
+
+	@media (max-width: $md3+px) {
+		margin: 12rem 0 12rem;
+	}
+
+	@media (max-width: $md4+px) {
+		margin: 5rem 0 5rem;
+	}
+
 	& img {
 		width: 100%;
 	}
@@ -1301,9 +1314,60 @@ a {
 		padding: 7rem 1.5rem;
 	//	border-bottom: 10px solid $mainColor;
 		min-height: 48rem;
+		overflow: hidden;
 
 		@media (max-width: $md3+px) {
 			height: 60vh;
+		}
+
+		&:before {
+			position: absolute;
+			content: '';
+			top: -10px;
+			right: 70%;
+			width: 810px;
+			height: 55px;
+			background: url(../img/lines/Group_68.svg) center no-repeat;
+			background-size: contain;
+			z-index: 2;
+
+			@media (max-width: $md2+px) {
+				height: 30px;
+				right: 64%;
+			}
+
+			@media (max-width: $md3+px) {
+				right: 52%;
+			}
+
+			@media (max-width: $md4+px) {
+				right: 36%;
+			}
+		}
+
+		&::after {
+			position: absolute;
+			content: '';
+			bottom: -10px;
+			left: 66%;
+			width: 810px;
+			height: 55px;
+			background: url(../img/lines/Group_69.svg) center no-repeat;
+			background-size: contain;
+			z-index: 2;
+
+			@media (max-width: $md2+px) {
+				height: 30px;
+				left: 62%;
+			}
+
+			@media (max-width: $md3+px) {
+				left: 52%;
+			}
+
+			@media (max-width: $md4+px) {
+				left: 36%;
+			}
 		}
 	}
 	&__img {
@@ -1332,14 +1396,14 @@ a {
 	&__suptitle {
 		font-size: 5.2rem;
 		font-weight: 300;
-		letter-spacing: 0.145em;
+		letter-spacing: 0.04em;
 		line-height: 5.5rem;
 		text-transform: uppercase;
 		margin-bottom: 7rem;
 		margin-top: 1.8rem;
 		margin: 0 auto;
-		max-width: 648px;
-		font-family: "TradeGothicLT-Light", sans-serif;
+		max-width: 660px;
+		font-family: "TradeGothicLT-CondEighteen", sans-serif;
 
 		@media (max-width: $md3+px) {
 			font-size: 3.6rem;	
@@ -1363,7 +1427,7 @@ a {
 		text-transform: uppercase;
 		margin-bottom: 7rem;
 		margin-top: 0rem;
-		font-family: $seconFontFamily;
+		font-family: "TradeGothicLT-BoldCondTwenty", sans-serif;
 
 		@media (max-width: $md3+px) {
 			font-size: 3.6rem;
@@ -1706,7 +1770,7 @@ a {
 		}
 
 		& > span {
-			font-family: "TradeGothicLT-Light";
+			font-family: "TradeGothicLT-CondEighteen";
 			font-weight: 300;
 		}
 	}

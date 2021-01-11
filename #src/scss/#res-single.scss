@@ -4,14 +4,6 @@
 
 		& .swiper-container {
 			border-bottom: 1rem solid $mainColor;
-			& .swiper-pagination {
-				& .swiper-pagination-bullet-active {
-					& > .progress {
-						 animation: dash 8.1s linear forwards;
-					}
-				}
-				
-			}
 		}
 		@media (max-width: $md3+px) {
 			padding: 0 1.5rem;

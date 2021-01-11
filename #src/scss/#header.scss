@@ -9,12 +9,12 @@
 		min-height: 30px;
 		background: $mainColor;
 		align-items: center;
-
+		overflow: hidden;
 		@media (max-width: $md3+px) {
 			justify-content: center;
 			align-items: normal;
 		}
-
+ 
 		& > li {
 			position: relative;
 			margin-right: -1px;
@@ -43,7 +43,7 @@
 	}
 
 	&__top-link {
-		color: white;
+		color: #fff;
 		text-transform: uppercase;
 		font-weight: 400;
 		font-size: 7.5px;
@@ -55,7 +55,6 @@
 
 		&.active {
 			background: #fff;
-			color: $mainColor;
 			text-decoration: none;
 		}
 
@@ -277,6 +276,27 @@
 			display: block !important;
 		}
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//==========================================
+//	=======================================
+
 	&__menu-list {
 		display: flex;
 		flex-wrap: wrap;
@@ -294,6 +314,8 @@
 			@media (max-width: $md2+px) {
 				margin-right: 0;
 				text-align: center; 
+
+
 			}
 
 			@media (min-width: 992px) {
@@ -376,8 +398,8 @@
 					font-size: 1rem;
 				}
 
-				@media (max-width: $md3+px) {
-					font-size: 1.2rem;
+				@media (max-width: $md2+px) {
+					font-size: 1.4rem;
 				}
 
 				&:before {
@@ -515,6 +537,30 @@
 	}
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .drop-menu {
 	position: absolute;
 	top: 15rem;
@@ -565,8 +611,18 @@
 		text-align: center;
 		opacity: 0;
 		z-index: -1;
+		pointer-events: none;
 
-			pointer-events: none;
+		@media (max-width: $md2+px) {
+			pointer-events: auto;
+			position: static;
+			opacity: 1;
+			transform: translate(0);
+			display: none;
+			margin-bottom: 1rem;
+			padding-top: 0;
+
+		}
 
 
 
@@ -591,6 +647,11 @@
 					& img {
 						width: 100%;
 					}
+				}
+
+				@media (max-width: $md2+px) {
+					font-size: 1rem;
+					padding: 1rem 1.5rem;
 				}
 
 				@media (min-width: 992px) {

@@ -90,15 +90,11 @@
 
 	& p {
 		color: #000000;
-		font-size: 1.8rem;
+		font-size: 1.5rem;
 		font-weight: 400;
 		margin-bottom: 2rem;
 		line-height: 2.2rem;
 
-		@media (max-width: $md2+px) {
-			font-size: 1.6rem;
-			line-height: 2.2rem;
-		}
 	}
 
 	&__images {
