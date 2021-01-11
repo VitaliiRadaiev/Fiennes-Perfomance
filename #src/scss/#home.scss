@@ -498,6 +498,7 @@
 .slider {
 	position: relative;
 
+
 	&:before {
 		position: absolute;
 		content: '';
@@ -553,6 +554,16 @@
 			& .text-block__title, h3, .title-3 {
 				color: #fff;
 
+			}
+		}
+
+		& .text-block__title {
+			font-family: "TradeGothicLT-CondEighteen", sans-serif;
+			font-weight: 300;
+			& > strong {
+				display: block;
+				font-weight: 700;
+				font-family: "TradeGothicLT-BoldCondTwenty", sans-serif;
 			}
 		}
 	}
