@@ -163,6 +163,7 @@ $('img.img-svg').each(function(){
 @@include('#reviews-slider.js');
 @@include('#video.js');
 @@include('#slider-text.js');
+@@include('##animation-text.js');
 // === COMMON ==================================================================
 
 

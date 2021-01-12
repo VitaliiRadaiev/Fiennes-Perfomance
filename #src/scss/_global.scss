@@ -1828,3 +1828,62 @@ a {
 }
 // === and text-content ========================================================================
 
+
+
+.textAnimation {
+	opacity: 0;
+	& .text-line {
+		display: inline-block;
+		height: 1.2em;
+		width: 3px;
+		background-color: $mainColor;
+		transform: translateY(21%);
+		animation: text-line-anim 0.75s step-end infinite;
+	}
+
+	& .text-1, .text-2 {
+		display: block;
+
+		& > span {
+			position: relative;
+		}
+	}
+
+	& .text-2 {
+		font-family:$seconFontFamily;
+		font-weight: 700;
+	}
+
+	& .typed {
+		white-space: nowrap;
+		min-height: 1em;
+		display: inline-block;
+	}
+
+	& .typed-strings {
+		white-space: nowrap;
+		opacity: 0;
+		display: none;
+	}
+
+	& .typed-cursor {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 3px;
+		height: 100%;
+		background-color: $mainColor;
+	}
+}
+
+@keyframes text-line-anim {
+	0% {
+		background-color: $mainColor;
+	}
+	50% {
+		background-color: transparent;
+	}
+	100% {
+		background-color: $mainColor;
+	}
+}

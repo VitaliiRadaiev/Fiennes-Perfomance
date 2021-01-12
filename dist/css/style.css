@@ -2058,6 +2058,86 @@ a {
   margin-top: 3em;
 }
 
+.textAnimation {
+  opacity: 0;
+}
+
+.textAnimation .text-line {
+  display: inline-block;
+  height: 1.2em;
+  width: 3px;
+  background-color: #aa2032;
+  -webkit-transform: translateY(21%);
+      -ms-transform: translateY(21%);
+          transform: translateY(21%);
+  -webkit-animation: text-line-anim 0.75s step-end infinite;
+          animation: text-line-anim 0.75s step-end infinite;
+}
+
+.textAnimation .text-1,
+.textAnimation .text-2 {
+  display: block;
+}
+
+.textAnimation .text-1 > span,
+.textAnimation .text-2 > span {
+  position: relative;
+}
+
+.textAnimation .text-2 {
+  font-family: "TradeGothicLT-BoldCondTwenty", serif;
+  font-weight: 700;
+}
+
+.textAnimation .typed {
+  white-space: nowrap;
+  min-height: 1em;
+  display: inline-block;
+}
+
+.textAnimation .typed-strings {
+  white-space: nowrap;
+  opacity: 0;
+  display: none;
+}
+
+.textAnimation .typed-cursor {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  background-color: #aa2032;
+}
+
+@-webkit-keyframes text-line-anim {
+  0% {
+    background-color: #aa2032;
+  }
+
+  50% {
+    background-color: transparent;
+  }
+
+  100% {
+    background-color: #aa2032;
+  }
+}
+
+@keyframes text-line-anim {
+  0% {
+    background-color: #aa2032;
+  }
+
+  50% {
+    background-color: transparent;
+  }
+
+  100% {
+    background-color: #aa2032;
+  }
+}
+
 /**
  * Swiper 6.3.3
  * Most modern mobile touch slider and framework with hardware accelerated transitions
