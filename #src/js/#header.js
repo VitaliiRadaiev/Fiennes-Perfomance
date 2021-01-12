@@ -1,4 +1,15 @@
 {
+	let mobileTopBtn = document.querySelector('.header__mobile-btn');
+	if(mobileTopBtn) {
+		mobileTopBtn.addEventListener('click', function() {
+			if(document.documentElement.clientWidth < 768) {
+				this.classList.toggle('_active');
+				_slideToggle(this.nextElementSibling);
+			}
+		})
+	}
+}
+{
 	let btn = document.querySelector('.header__switch-btn'); {
 		if(btn) {
 			btn.addEventListener('click', (e) => {
